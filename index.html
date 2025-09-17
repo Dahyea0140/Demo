@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dahyea Kalvi">
+    <meta name="description" content="Kalvi's Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First webpage</title>
+</head>
+
+<body>
+    <h1>Hi, World!</h1>
+    <p>Welcome to my page</p>
+    <figure>
+        <img src="image/mypic.jpg" alt="my pic" title="This is me" width="275" height="183">
+        <figcaption>This is me</figcaption>
+    </figure>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#self">About Me</a>
+                </li>
+                <li>
+                    <a href="#hobbies">Hobbies</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article id="self">
+        <section>
+            <h2>About Me</h2>
+            <p>
+                My name is Dahyea Kalvi. I am a student at the University of Washington, Bothell. I am majoring in
+                Informatics with a minor in Computer Science. I love to code and create new things.
+            </p>
+        </section>
+    </article>
+    <hr>
+    <article>
+        <table border="1">
+            <caption>My Schedule</caption>
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Morning</th>
+                    <td><time datetime="08:00">8.00</time>-<time datetime="11:00">11.00</time></td>
+                    <td>Wake Up and Study</td>
+                </tr>
+                <tr>
+                    <th scope="row">Noon</th>
+                    <td><time datetime="11:00">11.00</time>-<time datetime="02:00">2.00</time></td>
+                    <td>Prayer and Lunch</td>
+                </tr>
+                <tr>
+                    <th scope="row">Afternoon</th>
+                    <td><time datetime="02:00">2.00</time>-<time datetime="06:00">6.00</time></td>
+                    <td>Rest, Study and Prayer</td>
+                </tr>
+                <tr>
+                    <th scope="row">Night</th>
+                    <td><time datetime="06:00">6.00</time>-<time datetime="12:00">12.00</time></td>
+                    <td>Code</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">And that's my daily routine.What is yours? Talk with me.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </article>
+    <article>
+        <section>
+            <div>I live in <abbr title="New York City">NYC</abbr>.<br> I love listeing to <em>Green Day</em></div>
+        </section>
+    </article>
+    <hr>
+    <article>
+        <section id="hobbies">
+            <h3>My Hobbies</h3>
+            <ol>
+                <li>Coding</li>
+                <figure>
+                    <img src="image/coding.png" alt="coding" title="coding pic" width="275" height="183" loading="lazy">
+                    <figcaption>Coding</figcaption>
+                </figure>
+                <li>Hiking</li>
+                <figure>
+                    <img src="image/travelling.png" alt="hiking" title="hiking pic" width="275" height="183"
+                        loading="lazy">
+                    <figcaption>Hiking</figcaption>
+                </figure>
+                <li>Gaming</li>
+                <figure>
+                    <img src="image/gaming.png" alt="gaming" title="gaming" width="275" height="183" loading="lazy">
+                    <figcaption>Gaming</figcaption>
+                </figure>
+            </ol>
+            <p>Reading</p>
+            <figure>
+                <img src="image/reading.png" alt="reading" width="267" height="188" loading="lazy">
+                <figcaption>Reading</figcaption>
+            </figure>
+            <ul>
+                <li>Fiction</li>
+                <figure>
+                    <img src="image/fiction.png" alt="fiction" title="fiction pic" width="275" height="183"
+                        loading="lazy">
+                    <figcaption>Fiction</figcaption>
+                </figure>
+                <li>Mystery</li>
+                <figure>
+                    <img src="image/mystery.png" alt="mystery" title="mystery pic" width="275" height="183"
+                        loading="lazy">
+                    <figcaption>Mystery</figcaption>
+                </figure>
+                <li>Fantasy</li>
+                <figure>
+                    <img src="image/fantasy.png" alt="fantasy" title="fantasy pic" width="275" height="183"
+                        loading="lazy">
+                    <figcaption>Fantasy</figcaption>
+                </figure>
+            </ul>
+    </article>
+
+    <hr>
+
+    <article id="contact">
+        <h2>Contact me</h2>
+        <p> I would like to hear from you.</p>
+
+
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend> Personal Info</legend>
+                <p>
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" id="Name" placeholder="Fullname" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="Gmail">Gmail</label>
+                    <input type="mail" name="Gmail" id="Gmail" placeholder="Gmail" required>
+                </p>
+                <p>
+                    <label for="Phone">Phone</label>
+                    <input type="tel" name="phone" id="Phone" placeholder="Phone" required>
+                </p>
+                <p>
+                    <label for="decade">Choice of Decade</label>
+                    <input type="number" name="decade" id="decade" min="1960" max="2020" step="10" value="1950"
+                        required>
+                </p>
+                <!-- <p>
+                <label for="coffee"> Fav coffee</label>
+                <select name="coffee" id="coffee" multiple size="5">
+                    <optgroup label="Coffees">
+                        <option value="Regular Coffee">Regular Coffee</option>
+                        <option value="Iced Coffee"> Iced Coffee</option>
+                    </optgroup>
+                    <optgroup label="Espreso">
+                        <option value="Latte"> Latte</option>
+                        <option value="Americano">Americano</option>
+                    </optgroup>
+                    <optgroup label="Drinks">
+                        <option value="Grande"> Grande</option>
+                        <option value="Macha">Macha</option>
+                    </optgroup>
+                </select>
+            </p> -->
+                <p>
+                    <label for="coffee">Fav Coffee</label>
+                    <input type="text" name="coffee" id="coffee" list="coffee-list">
+                    <datalist id="coffee-list">
+                        <option value="coffee">
+                        <option value="latte">
+                        <option value="espresso">
+                        <option value="americano">
+                        <option value="other">
+                    </datalist>
+                </p>
+                <button>submit</button>
+            </fieldset>
+            <fieldset>
+                <legend>What is your favorite Food?</legend>
+                <p>
+                    <input type="radio" name="food" id="tacos" value="tacos">
+                    <label for="tacos">Tacos</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="pizza" value="pizza">
+                    <label for="pizza">Pizza</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="Chips" value="Chips">
+                    <label for="Chips">Chips</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="Briyani" value="Briyani">
+                    <label for="Briyani">Briyani</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Do you have a pet?</legend>
+                <p>
+                    <input type="checkbox" name="pets" id="dog" value="dog">
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="cat" value="cat">
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="fish" value="fish">
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="other" value="other">
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Send Me a Note</legend>
+                <label for="message">Your message:</label>
+                <br>
+                <textarea name="message" id="message" col="30" rows="10"></textarea>
+            </fieldset>
+        </form>
+
+    </article>
+</body>
+<footer>
+    <hr>
+    <address>
+        Dahyea Kalvi<br>
+        1234 Coding St.<br>
+        Bothell, WA 98011<br>
+    </address>
+    &lt;&lt; &copy; 2024 Dahyea Kalvi&gt;&gt;
+    <p><a href="#">Back to top</a></p>
+</footer>
+
+</html>
